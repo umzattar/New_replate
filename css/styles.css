@@ -1,0 +1,331 @@
+:root {
+    --mainColor:#f6f8fa;
+    --darkBlack:#2d2f31;
+    --darkGrey:#61666b;
+    --grey: #d5d5d5;
+    --lightGrey: #f2f2f2;
+    --yellow: #fecb40;
+    --secondryColor:#4774a2;
+	--white:#fff;
+	--margin_sidebar:100px;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    color: var(--darkBlack);
+}
+	.msg {
+	   padding-top: 5px;
+	   font-size: 15px;
+}
+ .success {
+      color: green;
+   }
+   .error {
+      color: red;
+   }
+		 header {
+            background-image: url('../img/images-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Adjust height as necessary */
+            color: #fff;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .offer-text {
+            text-align: left;
+            color: #fff;
+            font-weight: bold;
+            z-index: 2; /* Make sure text appears above the background */
+        }
+
+        .offer-text h1 {
+            color: #FFC107; /* Gold color for the discount */
+            font-size: 2.5rem;
+        }
+
+        .offer-text p {
+            font-size: 1.5rem;
+        }
+
+        /* Optional: Overlay to darken the background image for better text visibility */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            border-radius: 10px;
+            z-index: 1; /* Overlay appears between background and text */
+        }
+		
+		
+		/* Basic styling for the list items */
+    .restaurant-list .list-group-item {
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Styles for hover and active states, except the first item */
+.restaurant-list .list-group-item:hover:not(:first-child),
+.restaurant-list .list-group-item.active:not(:first-child) {
+    background-color: var(--yellow);
+    color: #fff;
+}
+
+/* Special style for the first item, keeping it fixed */
+.restaurant-list .list-group-item:first-child {
+    background-color: #333; /* Fixed background color for the first item */
+    color: #fff; /* Fixed text color */
+    cursor: default; /* No pointer effect */
+    font-weight: bold;
+}
+
+    .card {
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+	
+		/* About section styles */
+.about-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Your existing background color */
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Adding a subtle gradient */
+    border-radius: 10px; /* Optional: add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a soft shadow */
+}
+
+.about-image {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 10px; /* Optional: round image corners */
+}
+
+.bg-gray {
+  --bs-bg-opacity: 1;
+  background-color: #adb5bd;
+}
+
+ .carousel-items .card {
+    position: relative;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 11px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(212,182,212,1);
+    box-shadow: 0px 0px 5px 0px rgb(161, 163, 164);
+}
+
+ .carousel-items .card .card-body {
+        padding: 1rem 1rem;
+ }
+
+ .carousel-items .card-body {
+     flex: 1 1 auto;
+     padding: 1.25rem
+ }
+
+ .carousel-items  p {
+     font-size: 0.875rem;
+     margin-bottom: .5rem;
+     line-height: 1.5rem
+ }
+
+ .carousel-items h4{
+         line-height: .2 !important;
+ }
+
+
+.carousel-items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px
+}
+
+.carousel-items  .slick-slide {
+    margin: 10px
+}
+
+
+.carousel-items  .media iframe,
+.carousel-items .media-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    border-radius: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: rgba(120, 120, 120, .1);
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.carousel-items .media-content:before {
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 90%;
+    left: 5%;
+    bottom: 0;
+    background: inherit;
+    background-position-y: 100%;
+    filter: blur(10px)
+}
+
+.carousel-items .circle .media-content:before {
+    width: 40%;
+    left: 30%
+}
+
+
+.carousel-items .profile-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px;
+}
+
+.carousel-items .card-title{
+    font-size: 19px;
+    font-weight: 200;
+}
+
+
+ .about-section {
+            padding: 60px 0;
+        }
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .about-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .icon-feature {
+            font-size: 2rem;
+            color: #007bff;
+        }
+        .about-description {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .value-box {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+	.contact-section {
+            padding: 60px 0;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .icon-contact {
+            font-size: 2rem;
+            color: #007bff;
+        }	
+		
+		 /* cards style */
+		.table th, .table td {
+            vertical-align: middle;
+        }
+		.li-product-thumbnail img {
+	    height: 100px;
+	    width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+        .cart-plus-minus {
+            display: flex;
+            align-items: center;
+        }
+        .cart-plus-minus input {
+            width: 50px;
+            text-align: center;
+        }
+        .qtybutton {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        .cart-page-total {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+		
+		/* Login section styles */
+ .login-container {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+        .login-form h2 {
+            font-size: 26px;
+            color: #43a047;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-control {
+            border-radius: 30px;
+        }
+        .login-icons i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .tagline {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
