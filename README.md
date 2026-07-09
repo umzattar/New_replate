@@ -1,4 +1,4 @@
-# REPLATE — Food Waste Reduction Platform
+# WECARE — Food Waste Reduction Platform
 
 Helping restaurants reduce food waste by selling surplus meals at discounted prices while promoting sustainable consumption.
 
