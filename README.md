@@ -4,6 +4,10 @@ Helping restaurants reduce food waste by selling surplus meals at discounted pri
 
 ---
 
+## Live Demo
+https://foodlast.infinityfree.me/index.php
+
+---
 ## About
 
 REPLATE is a web-based platform that connects restaurants with customers looking for affordable meals made from surplus food. Instead of wasting perfectly good food, restaurants can publish available meals on the platform, allowing users to purchase them at lower prices.
@@ -102,53 +106,4 @@ REPLATE/
 
 ---
 
-## Database
 
-The project uses a MySQL database named:
-
-```
-dbfoods
-```
-
-Import the included SQL file before running the project:
-
-```
-dbfoods.sql
-```
-
----
-
-## Setup
-
-1. Import the database:
-```
-dbfoods.sql
-```
-
-2. Update database credentials inside:
-
-```
-dbcon.php
-```
-
-3. Upload the project files to:
-
-```
-htdocs/
-```
-
-or
-
-```
-public_html/
-```
-
-4. Open the website in your browser.
-
----
-
-## Team
-
-Developed as a graduation project.
-
-**Project Name:** REPLATE
