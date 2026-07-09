@@ -5,14 +5,16 @@ Helping restaurants reduce food waste by selling surplus meals at discounted pri
 ---
 
 ## Live Demo
+
 https://foodlast.infinityfree.me/index.php
 
 ---
+
 ## About
 
-REPLATE is a web-based platform that connects restaurants with customers looking for affordable meals made from surplus food. Instead of wasting perfectly good food, restaurants can publish available meals on the platform, allowing users to purchase them at lower prices.
+WECARE is a web-based platform that connects restaurants with customers looking for affordable meals made from surplus food. Instead of wasting perfectly good food, restaurants can publish available meals on the platform, allowing users to purchase them at discounted prices.
 
-The platform aims to reduce food waste, support local businesses, and encourage environmentally responsible consumption.
+The platform helps reduce food waste, supports local restaurants, and encourages sustainable consumption through an easy-to-use online marketplace.
 
 ---
 
